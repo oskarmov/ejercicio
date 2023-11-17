@@ -1,4 +1,3 @@
-# Diagrama
-**Ejercicio JAVA**
+**RESOLVIENDO BANCO BCI**
 
-!Ejercicio(imagenes/Ejercicio.png)
+![Ejercicio](imagenes/Ejercicio.png)
