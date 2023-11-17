@@ -2,14 +2,14 @@ package com.bancoBci.ejercicios.bancoBci.service;
 
 import com.bancoBci.ejercicios.bancoBci.entities.Persona;
 
-import java.util.List;
-
 public interface PersonaService {
 
-    List<Persona> obtenerTodas();
+    Persona saveUser(Persona persona);
+  
+    Persona updateUser(String userId, Persona persona);
 
-    Persona obtenerPorId(Long id);
+    Persona getUserById(String userId);
 
-    Persona crearPersona(Persona persona);
+    Persona void deleteUser(String userId);
 
 }

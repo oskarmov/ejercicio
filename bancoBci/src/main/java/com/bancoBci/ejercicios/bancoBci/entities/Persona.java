@@ -1,20 +1,29 @@
 package com.bancoBci.ejercicios.bancoBci.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor  //constructor sin ningun campo
-@AllArgsConstructor //contructor que incluye todos los atributos (id,nombre, edad)
-@Data   //getter y setter
+import java.time.LocalDateTime;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data 
 @Entity
 @Table(name="registro")
 public class Persona {
-    @Id
-    private Long id;
-    private String nombre;
-    private int edad;
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.UUID)
+  private String id;
+  private String name;
+  @Column(unique = true)
+  private String email;
+  private String password;
+  private LocalDateTime createdAt;
+  private LocalDateTime modifiedAt;
+  private LocalDateTime lastLoginAt;
+  private Boolean isActive;
+  private String token;
 }
