@@ -1,3 +1,3 @@
 **RESOLVIENDO BANCO BCI**
 
-![Ejercicio](imagenes/Ejercicio.png)
+![Ejercicio](imagenes/Ejercicio.jpg)
