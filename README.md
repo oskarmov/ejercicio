@@ -1,4 +1,4 @@
 # Diagrama
 **Ejercicio JAVA**
 
-!Ejercicio(image/Ejercicio.png)
+!Ejercicio(imagenes/Ejercicio.png)
